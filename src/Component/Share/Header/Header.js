@@ -40,7 +40,10 @@ const Header = () => {
 
             <Nav>
               {user?.displayName || user?.email ? (
-                <button onClick={logOut}>Log Out</button>
+                <>
+                  <CustomLink className="nav-link" to="/">{user?.displayName && user.displayName}</CustomLink>
+                  <button onClick={logOut}>Log Out</button>
+                </>
               ) : (
                 <>
                   <CustomLink className="nav-link" to="/login">Login</CustomLink>

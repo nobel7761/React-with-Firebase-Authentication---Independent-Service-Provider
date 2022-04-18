@@ -83,7 +83,7 @@ const SignUp = () => {
                   onClick={() => setAgree(!agree)}
                   type="checkbox"
                   name="terms"
-                  label="Accept genius terms and condition"
+                  label="Accept terms and condition"
                 />
               </Form.Group>
               <Button

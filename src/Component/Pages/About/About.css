@@ -1,3 +1,9 @@
 .about-left .about-text{
     text-align: justify;
 }
+
+.about-right{
+    display: flex;
+    justify-content: center;
+}
+

@@ -80,6 +80,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="Enter email"
+                required
               />
             </Form.Group>
 
@@ -90,6 +91,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="Password"
+                required
               />
             </Form.Group>
 
@@ -99,7 +101,7 @@ const Login = () => {
                 onClick={() => setAgree(!agree)}
                 className={agree ? "text-primary" : "text-danger"}
                 type="checkbox"
-                label="Accept the genius terms and condition"
+                label="Accept the terms and condition"
               />
             </Form.Group>
 

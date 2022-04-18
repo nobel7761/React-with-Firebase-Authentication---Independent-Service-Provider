@@ -13,13 +13,16 @@ const About = () => {
           <div className=" under-line bg-danger"></div>
         </div>
         <div className="about-content d-md-flex d-lg-flex gap-5 align-items-center">
-          <div className="about-left">
+          <div className="about-left w-50">
             <h3 className="mb-4">Md. Habibur Rahaman Nobel</h3>
             <p className="about-text">
               My present goal is to be a skilled full stack web developer. For
               this reason I always try to study and practice web related
               technology like javascript, ReactJs, firebase, Nodejs, MongoDB
               etc. Also take some sort courses to improve my knowledge.
+            </p>
+            <p>
+              By the year of 2022, My target is not only to become a Full Stack Web Developer but also ending with few months professional full stack web developer experiences! Regarding this, I'm fully working to enhance my skills in MERN Stack
             </p>
           </div>
           <div className="about-right ">
