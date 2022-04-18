@@ -34,7 +34,7 @@ const Header = () => {
                             ) : (
                                 <CustomLink className="nav-link" to="/login">Login</CustomLink>
                             )}
-                            <CustomLink className="nav-link" eventKey={2} to="/signup">Sign Up</CustomLink>
+                            <CustomLink className="nav-link" eventKey={2} to="/register">Register</CustomLink>
                         </Nav>
 
                     </Navbar.Collapse>
