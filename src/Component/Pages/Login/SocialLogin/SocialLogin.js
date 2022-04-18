@@ -1,8 +1,6 @@
 import React from "react";
-import { FaGoogle, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
 import {
-  useSignInWithFacebook,
-  useSignInWithGithub,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -12,11 +10,6 @@ const SocialLogin = () => {
   // sign in with google
   const [signInWithGoogle] = useSignInWithGoogle(auth);
 
-  // sign in with github
-  const [signInWithGithub] = useSignInWithGithub(auth);
-
-  // sign in with facebook
-  const [signInWithFacebook] = useSignInWithFacebook(auth);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -29,17 +22,7 @@ const SocialLogin = () => {
     navigate(from, { replace: true });
   };
 
-  // facebook sign in
-  const handleFacebookLogin = async () => {
-    await signInWithFacebook();
-    navigate(from, { replace: true });
-  };
 
-  // Sign In with github
-  const handleSignInWithGithub = async () => {
-    await signInWithGithub();
-    navigate(from, { replace: true });
-  };
   return (
     <div className="d-block">
       <button
