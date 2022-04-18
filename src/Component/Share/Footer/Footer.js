@@ -17,20 +17,20 @@ const Footer = () => {
           <Col>
             <div className="mb-2">
               <h3>
-                <i>Lawyer Iqbal</i>
+                <i>Lawyer Nobel</i>
               </h3>
             </div>
             <div className=" under-line mb-3 bg-danger w-50"></div>
             <div className="text-secondary">
               {" "}
               <li>
-                <FaPhoneAlt></FaPhoneAlt> +880-018455-55047
+                <FaPhoneAlt></FaPhoneAlt> +88-015213-20912
               </li>
               <li className="my-2">
-                <FaEnvelopeOpen></FaEnvelopeOpen> engiqbal1999@gmail.com
+                <FaEnvelopeOpen></FaEnvelopeOpen> habiburnobel@gmail.com
               </li>
               <li>
-                <FaLocationArrow></FaLocationArrow> Begumganj, Noakhali.
+                <FaLocationArrow></FaLocationArrow> Rampura, Dhaka.
               </li>
             </div>
           </Col>

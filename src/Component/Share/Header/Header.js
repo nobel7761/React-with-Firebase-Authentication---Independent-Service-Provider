@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../../firebase.init";
 import { signOut } from "firebase/auth";
+import CustomLink from '../../CustomLink/CustomLink';
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -12,7 +13,7 @@ const Header = () => {
     signOut(auth);
   };
   return (
-    <header className="">
+    <header className="header">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -24,39 +25,28 @@ const Header = () => {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <h3>
-              <i>Lawyer Iqbal</i>
+              Lawyer Nobel
             </h3>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link className="nav-link" as={Link} to="/">
-                Home
-              </Nav.Link>
-              {/* <Nav.Link as={Link} to="/services">
-                Services
-              </Nav.Link> */}
-              <Nav.Link as={Link} to="/checkout">
-                Check Out
-              </Nav.Link>
-              <Nav.Link as={Link} to="/blog">
-                Blog
-              </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                About Me
-              </Nav.Link>
+              <CustomLink className="nav-link" to="/">Home</CustomLink>
+              <CustomLink className="nav-link" to="/checkout">Check Out</CustomLink>
+              <CustomLink className="nav-link" to="/blog">Blog</CustomLink>
+              <CustomLink className="nav-link" to="/about">About Me</CustomLink>
             </Nav>
+
             <Nav>
               {user?.displayName || user?.email ? (
                 <button onClick={logOut}>Log Out</button>
               ) : (
-                <Nav.Link as={Link} to="/login">
-                  Login
-                </Nav.Link>
+                <>
+                  <CustomLink className="nav-link" to="/login">Login</CustomLink>
+                  <CustomLink className="nav-link" eventKey={2} to="/signup">Sign Up</CustomLink>
+                </>
               )}
-              <Nav.Link as={Link} eventKey={2} to="/signup">
-                Sign Up
-              </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>

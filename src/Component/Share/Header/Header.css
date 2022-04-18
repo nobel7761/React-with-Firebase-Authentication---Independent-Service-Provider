@@ -4,9 +4,6 @@
 header{
     margin-bottom: 82px;
 }
-.nav-link{
-    color: aliceblue !important;
-}
-.nav-link:hover{
-    color: #db3636 !important;
+a{
+    margin-right: 20px;
 }

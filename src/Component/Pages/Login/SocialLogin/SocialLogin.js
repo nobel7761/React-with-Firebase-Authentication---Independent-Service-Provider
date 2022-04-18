@@ -48,19 +48,7 @@ const SocialLogin = () => {
       >
         <FaGoogle /> Google Sign In
       </button>
-      <button
-        onClick={handleFacebookLogin}
-        style={{ background: "#4267B2" }}
-        className="d-block w-100 mt-3 py-2 text-white rounded-pill border "
-      >
-        <FaFacebook /> Facebook Sign In
-      </button>
-      <button
-        onClick={handleSignInWithGithub}
-        className="d-block w-100 mt-3 py-2 border rounded-pill bg-black text-white"
-      >
-        <FaGithub /> Github Sign In
-      </button>
+
     </div>
   );
 };
