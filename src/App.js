@@ -11,6 +11,7 @@ import Header from "./Component/Share/Header/Header";
 import NotFound from "./Component/NotFound/NotFound";
 import RequireAuth from "./Auth/RequireAuth";
 import About from "./Component/Pages/About/About";
+import ServiceList from "./Component/Pages/ServiceList/ServiceList";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             </RequireAuth>
           }
         ></Route>
+        <Route path="/service" element={<ServiceList></ServiceList>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>

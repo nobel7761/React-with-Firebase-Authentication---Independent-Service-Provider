@@ -49,7 +49,7 @@ const SignUp = () => {
           <h2 className="text-center mb-3">Please Sign Up</h2>
           <div className=" mx-auto">
             <Form onSubmit={handleFormSubmit}>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Group className="mb-3" controlId="formBasicText">
                 <Form.Label>Your Name</Form.Label>
                 <Form.Control
                   type="name"
