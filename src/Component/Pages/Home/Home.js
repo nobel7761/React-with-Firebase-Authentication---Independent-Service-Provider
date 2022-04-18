@@ -26,7 +26,7 @@ const Home = () => {
           </div>
           <Row xs={1} md={3} className="g-4">
             {Array.from({ length: 1 }).map((_, idx) =>
-              services.map((service) => (
+              services.slice(0, 3).map((service) => (
                 <Services key={service.id} service={service}></Services>
               ))
             )}
