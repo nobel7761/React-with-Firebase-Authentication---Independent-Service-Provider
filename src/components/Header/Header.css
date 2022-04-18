@@ -1,17 +1,4 @@
-.header{
-    width: 80%;
-    margin: 0 auto;
-    background-color: aqua;
-}
-
-.myNav{
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: red;
-}
-
-.header-anchor{
-    display: flex;
+.nav-link{
+    margin-right: 20px;
+    font-size: 18px;
 }
