@@ -13,9 +13,7 @@ const Banner = () => {
           <Carousel.Caption className="">
             <h2 style={{ fontSize: '45px', color: 'white', fontWeight: 'bold' }}>Car Accident</h2>
             <p style={{ fontSize: '25px', color: 'white', fontWeight: 'bold' }}>
-              Accidents happen. We hear it all the time, and usually chalk it up
-              to bad luck or being in the wrong place at the wrong time. But
-              sometimes an accident and a resulting injury are somebody’s fault.
+              Accidents happen. We hear it all the time.
             </p>
             <button className="btn btn-danger">Book Now</button>
           </Carousel.Caption>
@@ -26,10 +24,8 @@ const Banner = () => {
           <Carousel.Caption>
             <h2 style={{ fontSize: '45px', color: 'black', fontWeight: 'bold' }}>Divorce</h2>
             <p style={{ fontSize: '25px', color: 'black', fontWeight: 'bold' }}>
-              Divorce entails the cancelation or reorganisation of the legal
-              responsibilities of marriage by dissolving the bonds of marriage
-              between a married couple under the rule of law of a particular
-              state or country.
+              Divorce entails the cancellation or reorganization of the legal
+              responsibilities.
             </p>
             <button className="btn btn-danger">Book Now</button>
           </Carousel.Caption>
@@ -40,10 +36,7 @@ const Banner = () => {
           <Carousel.Caption>
             <h2 style={{ fontSize: '45px', color: 'black', fontWeight: 'bold' }}>Criminal Defence</h2>
             <p style={{ fontSize: '25px', color: 'black', fontWeight: 'bold' }}>
-              Criminal law is the body of law that relates to crime. It
-              prescribes conduct perceived as threatening, harmful, or otherwise
-              endangering to the property, health, safety, and moral welfare of
-              people inclusive of one's self.
+              Criminal law is the body of law that relates to crime.
             </p>
             <button className="btn btn-danger">Book Now</button>
           </Carousel.Caption>
